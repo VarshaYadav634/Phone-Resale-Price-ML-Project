@@ -32,6 +32,7 @@ original_price: Original price in ₹
 years_of_use: Years of usage
 
 
+
 **Target:**
 
 resale_price: Predicted resale price in ₹
@@ -41,6 +42,7 @@ resale_price: Predicted resale price in ₹
 Programming Language: Python
 
 Libraries: pandas, numpy, scikit-learn, pickle, streamlit
+
 
 
 **📁 Project Structure**
