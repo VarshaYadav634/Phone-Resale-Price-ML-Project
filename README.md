@@ -1,19 +1,20 @@
-📱 **Phone Resale Price Prediction – Machine Learning Project**
+📱 Phone Resale Price Prediction – Machine Learning Project
 🧠 Project Overview
 
-This project leverages machine learning to predict the resale price of smartphones based on their specifications and usage history. By inputting details such as brand, RAM, storage, battery capacity, camera specifications, original price, and years of use, users can obtain an estimated resale value. This tool is particularly beneficial for consumers looking to assess the value of their devices before selling or upgrading.
+This project predicts the resale price of smartphones using machine learning.
+By entering phone specifications and years of use, users can quickly estimate the resale value.
 
 📊 Dataset
 
-The dataset comprises various smartphone models with attributes influencing resale value:
+The dataset contains smartphone specifications and resale prices.
 
 Features:
 
-brand: Smartphone brand (e.g., Samsung, Apple, Xiaomi)
+brand: Brand of the phone (e.g., Samsung, Apple)
 
 ram: RAM in GB
 
-storage: Storage capacity in GB
+storage: Storage in GB
 
 battery: Battery capacity in mAh
 
@@ -21,65 +22,69 @@ main_camera: Main camera resolution in MP
 
 front_camera: Front camera resolution in MP
 
-original_price: Original purchase price in ₹
+original_price: Original price in ₹
 
-years_of_use: Duration of use in years
+years_of_use: Years of usage
 
-Target Variable:
+Target:
 
-resale_price: Estimated resale price in ₹
+resale_price: Predicted resale price in ₹
 
 ⚙️ Technologies Used
 
 Programming Language: Python
 
-Libraries & Frameworks:
-
-pandas, numpy: Data manipulation and analysis
-
-scikit-learn: Machine learning algorithms and tools
-
-pickle: Model serialization
-
-streamlit: Web application framework for deployment
+Libraries: pandas, numpy, scikit-learn, pickle, streamlit
 
 📁 Project Structure
 Phone-Resale-Price-ML-Project/
 │
 ├── data/
-│   └── phone_prices.csv          # Dataset containing phone specifications and resale prices
+│   └── phone_prices.csv          # Dataset with phone specs and resale prices
 │
 ├── model/
-│   └── phone_resale_model.pkl    # Trained machine learning model and label encoder
+│   └── phone_resale_model.pkl    # Trained Random Forest model + LabelEncoder
 │
-├── app.py                        # Streamlit application script
+├── app.py                        # Streamlit web application
 ├── requirements.txt              # Python dependencies
 └── README.md                     # Project documentation
 
 🚀 How to Run the Application
-1. Clone the Repository
+1. Clone the repository
 git clone https://github.com/VarshaYadav634/Phone-Resale-Price-ML-Project.git
 cd Phone-Resale-Price-ML-Project
 
-2. Set Up a Virtual Environment (Optional but Recommended)
+2. Set up a virtual environment (optional but recommended)
 python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
-3. Install Dependencies
+3. Install dependencies
 pip install -r requirements.txt
 
-4. Run the Streamlit App
+4. Run the Streamlit app
 streamlit run app.py
 
 
-This command will start a local server, and you can access the application through your web browser.
+Open the link shown in the terminal to access the app in your browser.
 
 📈 Model Evaluation
 
-The model's performance is assessed using the following metrics:
+Algorithm: Random Forest Regressor (Regression)
 
-Mean Absolute Error (MAE): Measures the average magnitude of errors in predictions, expressed in ₹.
+Metrics:
 
-R² Score: Indicates the proportion of variance in the dependent variable that is predictable from the independent variables.
+Mean Absolute Error (MAE): Average prediction error in ₹
 
-These metrics provide insights into the model's accuracy and reliability in predicting resale prices.
+R² Score: Variance explained by the model
+
+Approximate Accuracy (%):
+
+Accuracy % = (1 - MAE / Average Resale Price) * 100
+
+🧪 Future Enhancements
+
+Try Gradient Boosting / XGBoost for better accuracy
+
+Add features like screen size, processor type, phone condition
+
+Deploy as a mobile application
