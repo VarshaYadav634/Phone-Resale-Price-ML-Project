@@ -3,12 +3,15 @@
 
 **🧠 Project Overview**
 
+
 This project predicts the resale price of smartphones using machine learning.
 By entering phone specifications and years of use, users can quickly estimate the resale value.
+
 
 **📊 Dataset**
 
 The dataset contains smartphone specifications and resale prices.
+
 
 **Features:**
 
@@ -28,6 +31,7 @@ original_price: Original price in ₹
 
 years_of_use: Years of usage
 
+
 **Target:**
 
 resale_price: Predicted resale price in ₹
@@ -37,6 +41,7 @@ resale_price: Predicted resale price in ₹
 Programming Language: Python
 
 Libraries: pandas, numpy, scikit-learn, pickle, streamlit
+
 
 **📁 Project Structure**
 
@@ -52,20 +57,22 @@ Phone-Resale-Price-ML-Project/
 ├── requirements.txt              # Python dependencies
 └── README.md                     # Project documentation
 
+
 **🚀 How to Run the Application**
 
 1. Clone the repository
 git clone https://github.com/VarshaYadav634/Phone-Resale-Price-ML-Project.git
+
 cd Phone-Resale-Price-ML-Project
 
-2. Set up a virtual environment (optional but recommended)
+3. Set up a virtual environment (optional but recommended)
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-3. Install dependencies
+4. Install dependencies
 pip install -r requirements.txt
 
-4. Run the Streamlit app
+5. Run the Streamlit app
 streamlit run app.py
 
 
@@ -85,6 +92,7 @@ R² Score: Variance explained by the model
 Approximate Accuracy (%):
 
 Accuracy % = (1 - MAE / Average Resale Price) * 100
+
 
 **🧪 Future Enhancements**
 
