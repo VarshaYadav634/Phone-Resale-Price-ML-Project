@@ -1,14 +1,16 @@
-📱 Phone Resale Price Prediction – Machine Learning Project
-🧠 Project Overview
+**📱 Phone Resale Price Prediction – Machine Learning Project**
+
+
+**🧠 Project Overview**
 
 This project predicts the resale price of smartphones using machine learning.
 By entering phone specifications and years of use, users can quickly estimate the resale value.
 
-📊 Dataset
+**📊 Dataset**
 
 The dataset contains smartphone specifications and resale prices.
 
-Features:
+**Features:**
 
 brand: Brand of the phone (e.g., Samsung, Apple)
 
@@ -26,7 +28,7 @@ original_price: Original price in ₹
 
 years_of_use: Years of usage
 
-Target:
+**Target:**
 
 resale_price: Predicted resale price in ₹
 
@@ -36,7 +38,8 @@ Programming Language: Python
 
 Libraries: pandas, numpy, scikit-learn, pickle, streamlit
 
-📁 Project Structure
+**📁 Project Structure**
+
 Phone-Resale-Price-ML-Project/
 │
 ├── data/
@@ -49,7 +52,8 @@ Phone-Resale-Price-ML-Project/
 ├── requirements.txt              # Python dependencies
 └── README.md                     # Project documentation
 
-🚀 How to Run the Application
+**🚀 How to Run the Application**
+
 1. Clone the repository
 git clone https://github.com/VarshaYadav634/Phone-Resale-Price-ML-Project.git
 cd Phone-Resale-Price-ML-Project
@@ -67,7 +71,8 @@ streamlit run app.py
 
 Open the link shown in the terminal to access the app in your browser.
 
-📈 Model Evaluation
+
+**📈 Model Evaluation**
 
 Algorithm: Random Forest Regressor (Regression)
 
@@ -81,7 +86,7 @@ Approximate Accuracy (%):
 
 Accuracy % = (1 - MAE / Average Resale Price) * 100
 
-🧪 Future Enhancements
+**🧪 Future Enhancements**
 
 Try Gradient Boosting / XGBoost for better accuracy
 
